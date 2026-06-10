@@ -1,0 +1,21 @@
+import webbrowser
+
+while True:
+    command = input("You: ").lower()
+
+    if command == "exit":
+        break
+    elif "google" in command:
+        webbrowser.open("https://google.com")
+    
+    elif "youtube" in command:
+        webbrowser.open("https://youtube.com")
+
+    elif "facebook" in command:
+        webbrowser.open("https://facebook.com")
+
+    elif "linkedin" in command:
+        webbrowser.open("https://linkedin.com")
+
+    else:
+        print("Jarvis:", command)
